@@ -74,7 +74,11 @@ public class PixelPropsUtils {
             "com.google.android.inputmethod.latin",
             "com.google.android.soundpicker",
             "com.google.pixel.dynamicwallpapers",
-            "com.google.pixel.livewallpaper"
+            "com.google.pixel.livewallpaper",
+            "com.amazon.avod.thirdpartyclient",
+            "com.disney.disneyplus",
+            "com.netflix.mediaclient",
+            "in.startv.hotstar"
     };
 
     private static final String[] packagesToChangeOnePlus9Pro = {
