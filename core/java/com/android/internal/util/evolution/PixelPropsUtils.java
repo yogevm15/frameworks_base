@@ -32,7 +32,7 @@ public class PixelPropsUtils {
     private static final Map<String, Object> propsToChangePixel2;
     private static final Map<String, Object> propsToChangePixel3XL;
     private static final Map<String, Object> propsToChangePixel5a;
-    private static final Map<String, Object> propsToChangeOnePlus9Pro;
+    private static final Map<String, Object> propsToChangeMi11;
 
     private static final String[] packagesToChangePixelXL = {
             "com.google.android.apps.photos",
@@ -81,7 +81,7 @@ public class PixelPropsUtils {
             "in.startv.hotstar"
     };
 
-    private static final String[] packagesToChangeOnePlus9Pro = {
+    private static final String[] packagesToChangeMi11 = {
             "com.google.android.apps.wearables.maestro.companion"
     };
 
@@ -114,13 +114,13 @@ public class PixelPropsUtils {
         propsToChangePixel5a.put("PRODUCT", "barbet");
         propsToChangePixel5a.put("MODEL", "Pixel 5a");
         propsToChangePixel5a.put("FINGERPRINT", "google/barbet/barbet:11/RD2A.210905.002/7513089:user/release-keys");
-        propsToChangeOnePlus9Pro = new ArrayMap<>(6);
-        propsToChangeOnePlus9Pro.put("BRAND", "OnePlus");
-        propsToChangeOnePlus9Pro.put("MANUFACTURER", "OnePlus");
-        propsToChangeOnePlus9Pro.put("DEVICE", "OnePlus9Pro");
-        propsToChangeOnePlus9Pro.put("PRODUCT", "OnePlus9Pro_EEA");
-        propsToChangeOnePlus9Pro.put("MODEL", "LE2123");
-        propsToChangeOnePlus9Pro.put("FINGERPRINT", "OnePlus/OnePlus9Pro_EEA/OnePlus9Pro:11/RKQ1.201105.002/2107082109:user/release-keys");
+        propsToChangeMi11 = new ArrayMap<>(6);
+        propsToChangeMi11.put("BRAND", "Xiaomi");
+        propsToChangeMi11.put("MANUFACTURER", "Xiaomi
+        propsToChangeMi11.put("DEVICE", "venus");
+        propsToChangeMi11.put("PRODUCT", "venus");
+        propsToChangeMi11.put("MODEL", "M2011K2C");
+        propsToChangeMi11.put("FINGERPRINT", "Xiaomi/venus/venus:11/RKQ1.200928.002/21.9.1:user/release-keys");
     }
 
     public static void setProps(String packageName) {
@@ -151,11 +151,11 @@ public class PixelPropsUtils {
             }
             propsToChangePixel5a.forEach((key, value) -> setPropValue(key, value));
         }
-        if (contains(packagesToChangeOnePlus9Pro, packageName)){
+        if (contains(packagesToChangeMi11, packageName)){
             if (DEBUG){
                 Log.d(TAG, "Defining props for: " + packageName);
             }
-            propsToChangeOnePlus9Pro.forEach((key, value) -> setPropValue(key, value));
+            propsToChangeMi11.forEach((key, value) -> setPropValue(key, value));
         }
         // Set proper indexing fingerprint
         if (packageName.equals("com.google.android.settings.intelligence")){
