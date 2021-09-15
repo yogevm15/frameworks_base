@@ -116,7 +116,7 @@ public class PixelPropsUtils {
         propsToChangePixel5a.put("FINGERPRINT", "google/barbet/barbet:11/RD2A.210905.002/7513089:user/release-keys");
         propsToChangeMi11 = new ArrayMap<>(6);
         propsToChangeMi11.put("BRAND", "Xiaomi");
-        propsToChangeMi11.put("MANUFACTURER", "Xiaomi
+        propsToChangeMi11.put("MANUFACTURER", "Xiaomi");
         propsToChangeMi11.put("DEVICE", "venus");
         propsToChangeMi11.put("PRODUCT", "venus");
         propsToChangeMi11.put("MODEL", "M2011K2C");
