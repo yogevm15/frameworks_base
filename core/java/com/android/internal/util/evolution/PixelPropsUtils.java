@@ -119,8 +119,8 @@ public class PixelPropsUtils {
         propsToChangeMi11.put("MANUFACTURER", "Xiaomi");
         propsToChangeMi11.put("DEVICE", "venus");
         propsToChangeMi11.put("PRODUCT", "venus");
-        propsToChangeMi11.put("MODEL", "M2011K2C");
-        propsToChangeMi11.put("FINGERPRINT", "Xiaomi/venus/venus:11/RKQ1.200928.002/21.9.1:user/release-keys");
+        propsToChangeMi11.put("MODEL", "Mi 11");
+        propsToChangeMi11.put("FINGERPRINT", "Xiaomi/venus/venus:11/RKQ1.200928.002/V12.0.22.0.RKBCNXM:user/release-keys");
     }
 
     public static void setProps(String packageName) {
